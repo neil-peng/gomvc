@@ -2,7 +2,11 @@
 a simple golang mvc backend web service template, using gin-gonic/gin.   
 
 与其说这是一个框架，不如是提供一个简单的golang http协议的后端服务模板  
-相对于golang其他的框架，gomvc风格偏重go灵活的模块化，不做限制框架的约束， gomvc目标只是提供服务模板，不做复杂实现，方便在此上进一步开发。  
+相对于golang其他的框架，gomvc风格偏重go灵活的模块化，不做限制框架的约束， gomvc目标只是提供服务模板，不做复杂实现，方便在此上进一步开发。   
+编译：执行make生成可执行文件和相关配置到output目录
+
+## 特点
+   
 gin兼容：基于gin-gonic/gin上二次开发，完全支持gin使用方式。
 ```
 路由添加：utils.AddRoute("GET", "/rest/example/add", &action.Api{}, action.AddExample)
