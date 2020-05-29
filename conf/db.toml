@@ -1,0 +1,21 @@
+#mysql read/write timeout
+read_timeout_ms           = 500
+write_timeout_ms          = 500
+timeout_ms                = 1000
+max_open_conns            = 100
+max_idle_conns            = 50
+max_conn_timeout          = 1000
+
+#db cluster
+[[db_cluster]]
+    db_cluster_tag  = "mvc"
+    db_name         = "test"
+    username        = "root"
+    password        = "root"
+    server          = ["127.0.0.1:3306"]
+    nameservice     = "127.0.0.1:3306"
+
+#table
+[[table_view]]
+    table_name     = "table_example"
+    db_cluster_tag = "mvc"

@@ -1,0 +1,3 @@
+PORT = 8024
+LOG_LEVEL = 8
+LOG_FILE_NAME = "gomvc.log"
