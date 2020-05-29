@@ -12,7 +12,7 @@ gin兼容：基于gin-gonic/gin上二次开发，完全支持gin使用方式。
 路由添加：utils.AddRoute("GET", "/rest/example/add", &action.Api{}, action.AddExample)
 ```
 
-简单实用：执行流base类Exeute定义请求工作流，层次嵌套action->service->model->dao  
+简单实用：执行流base类Execute定义请求工作流。层次调用关系：action->service->model->dao  
 ```
 func (a *Api) Execute(ctx *gin.Context, cb utils.ApiCb) {
 	defer a.finish()
